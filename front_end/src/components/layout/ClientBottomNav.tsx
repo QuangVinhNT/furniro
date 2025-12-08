@@ -33,7 +33,7 @@ const ClientBottomNav = () => {
         return (
           <li key={idx} className="flex flex-col items-center gap-1">
             <span className={menuColor}>{menuItem.icon}</span>
-            <Link to={menuItem.link} className={`font-bold text-sm ${menuColor}`}>{menuItem.name}</Link>
+            <Link to={menuItem.link} className={`font-semibold text-xs ${menuColor}`}>{menuItem.name}</Link>
           </li>
         )
       })}

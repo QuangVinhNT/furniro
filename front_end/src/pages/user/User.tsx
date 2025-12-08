@@ -7,7 +7,7 @@ const User = () => {
       <ClientHeader />
       <div className="h-12"></div>
       <Outlet />
-      <div className="h-24"></div>
+      <div className="h-24 md:h-12"></div>
       <ClientBottomNav />
       <ClientFooter />
     </div>

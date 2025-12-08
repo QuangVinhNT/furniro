@@ -214,14 +214,14 @@ const products: Product[] = [
 ];
 const HomeProducts = () => {
   return (
-    <div className="mt-7 px-4">
-      <h1 className="text-center font-black text-xl">Our Products</h1>
-      <div className="mt-2 grid grid-cols-2 gap-3">
-        {products.map(product => <ProductCard key={product.id} product={product} />)}
-        <div className="col-span-2 flex justify-center">
-          <span className="inline-block border border-primary text-sm text-primary font-bold px-4 py-1.5">Show More</span>
-        </div>
+    <div className="mt-7 px-4 lg:px-12 lg:mt-12">
+      <h1 className="text-center font-extrabold md:text-lg lg:text-2xl">Our Products</h1>
+      <div className="mt-2 grid grid-cols-2 gap-1.5 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
+        {products.map(product => <ProductCard key={product.id} product={product} />)}        
       </div>
+      <div className="flex justify-center mt-2 lg:mt-4">
+          <button className="inline-block border border-primary text-xs text-primary font-semibold px-4 py-1.5 rounded-md transition-all hover:bg-primary hover:text-white cursor-pointer">Show More</button>
+        </div>
     </div>
   );
 };
