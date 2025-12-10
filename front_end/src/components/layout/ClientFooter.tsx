@@ -6,7 +6,7 @@ const linkMenuItems = [
   },
   {
     label: 'Shop',
-    linkTo: '/'
+    linkTo: '/shop'
   },
   {
     label: 'Blog',

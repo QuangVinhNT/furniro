@@ -1,13 +1,14 @@
 import Bedroom from '@/assets/bedroom.jpg';
 import Sofa from '@/assets/sofa1.jpg';
 import { LuChevronLeft, LuChevronRight, LuMoveRight } from "react-icons/lu";
+import { Link } from "react-router-dom";
 const HomeInspiration = () => {
   return (
     <div className="flex bg-secondary py-6 pl-4 gap-2 mt-7 lg:mt-12 lg:pl-12 lg:py-12">
       <div className="flex-1 md:flex-1/3 md:flex flex-col justify-center">
         <h2 className="font-extrabold text-2xl lg:text-4xl">50+ Beautiful rooms inspiration</h2>
         <p className="text-xs mt-2 lg:text-sm">Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
-        <button className="inline-block border border-primary text-xs bg-primary text-white font-semibold px-4 py-2 mt-3 rounded-md w-fit transition-all cursor-pointer hover:brightness-110">Explore More</button>
+        <Link to={'/shop'} className="inline-block border border-primary text-xs bg-primary text-white font-semibold px-4 py-2 mt-3 rounded-md w-fit transition-all hover:brightness-110">Explore More</Link>
       </div>
       <div className="flex-1 md:flex-2/3 md:flex gap-4 lg:h-[500px]">
         <div className="hidden md:block relative flex-1">
